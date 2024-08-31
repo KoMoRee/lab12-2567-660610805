@@ -1,3 +1,9 @@
 import { createContext } from "react";
 
-export const ThemeContext = createContext<any>("");
+export interface ThemeType {
+    name: string;
+    bgColor: string;
+    fgColor: string;
+}
+
+export const ThemeContext = createContext<any|ThemeType>("");
